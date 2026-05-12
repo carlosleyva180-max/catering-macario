@@ -653,10 +653,11 @@
     .video-embed {
       position: relative;
       width: 100%;
+      max-width: 320px;
       aspect-ratio: 9/16;
-      max-height: 540px;
       overflow: hidden;
       background: var(--dark-3);
+      margin: 0 auto;
     }
 
     .video-embed iframe {
@@ -826,7 +827,7 @@
     @media (max-width: 1024px) {
       .events-grid { grid-template-columns: repeat(2, 1fr); }
       .video-wrapper { grid-template-columns: 1fr; gap: 40px; }
-      .video-embed { max-height: 400px; }
+      .video-embed { max-width: 280px; }
       .photo-grid { grid-template-columns: repeat(2, 1fr); }
       .photo-item.featured { grid-column: span 2; }
     }
